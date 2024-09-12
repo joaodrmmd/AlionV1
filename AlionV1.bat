@@ -37,7 +37,7 @@ if /I %input% EQU 7 start powershell -Command "Start-Process powershell -Argumen
 if /I %input% EQU 8 start powershell -Command "Start-Process powershell -ArgumentList '-NoProfile -ExecutionPolicy Bypass -Command \"iex ((New-Object System.Net.WebClient).DownloadString(''https://chocolatey.org/install.ps1'')); choco install -y wget; wget -O \"$env:USERPROFILE\\Downloads\\Nvidia Driver.zip\" ''https://us.download.nvidia.com/GFE/GFEClient/3.28.0.417/GeForce_Experience_v3.28.0.417.exe''\" ; Start-Process explorer.exe $env:USERPROFILE\\Downloads\"' -Verb RunAs"
 if /I %input% EQU 9 start powershell -Command "Start-Process powershell -ArgumentList '-NoProfile -ExecutionPolicy Bypass -Command \"iex ((New-Object System.Net.WebClient).DownloadString(''https://chocolatey.org/install.ps1'')); choco install -y wget; wget -O \"$env:USERPROFILE\\Downloads\\AMD Driver.zip\" ''https://drivers.amd.com/drivers/installer/24.10/whql/amd-software-adrenalin-edition-24.8.1-minimalsetup-240829_web.exe''\" ; Start-Process explorer.exe $env:USERPROFILE\\Downloads\"' -Verb RunAs"
 if /I %input% EQU 10 start powershell -Command "Start-Process powershell -ArgumentList '-NoProfile -ExecutionPolicy Bypass -Command \"iex ((New-Object System.Net.WebClient).DownloadString(''https://chocolatey.org/install.ps1'')); choco install -y wget; wget -O \"$env:USERPROFILE\\Downloads\\DiscordNitro.zip\" ''https://github.com/Vencord/Installer/releases/latest/download/VencordInstaller.exe''\" ; Start-Process explorer.exe $env:USERPROFILE\\Downloads\"' -Verb RunAs"
-if /I %input% EQU 11 start "" "https://www.exemplo.com"
+if /I %input% EQU 11 start "" "https://github.com/joaodrmmd/AlionV1"
 cls 
 goto start 
 
