@@ -9,20 +9,22 @@ call :banner
 for /f %%A in ('"prompt $H &echo on &for %%B in (1) do rem"') do set BS=%%A 
 echo.
 echo.    
-echo           ║                                 ║                              ║
-echo           ╠══[1] Create Restore Point       ╠══[5] Download QuickCPU       ╠══[9] AMD Drivers
-echo           ║                                 ║                              ║
-echo           ╠══[2] Spotify Activation         ╠══[6] Disk Cleanup            ╠══[10] Discord Nitro - Windows
-echo           ║                                 ║                              ║
-echo           ╠══[3] KMS Activation             ╠══[7] Ahoy!                   ╚══[11] Github
-echo           ║                                 ║
-echo           ╚══[4] Otimization                ╚══[8] NVIDIA Drivers
+echo               [1;95m║[0m                                [1;95m║[0m                             [1;95m║[0m
+echo               [1;95m╠══[0m[1;37m[1] Create Restore Point[0m      [1;95m╠══[0m[1;37m[5] Download QuickCPU[0m      [1;95m╠══[0m[1;37m[9] AMD Drivers[0m
+echo               [1;95m║[0m                                [1;95m║[0m                             [1;95m║[0m
+echo               [1;95m╠══[0m[1;37m[2] Spotify Activation[0m        [1;95m╠══[0m[1;37m[6] Disk Cleanup[0m           [1;95m╠══[0m[1;37m[10] Discord Nitro - Windows[0m
+echo               [1;95m║[0m                                [1;95m║[0m                             [1;95m║[0m
+echo               [1;95m╠══[0m[1;37m[3] KMS Activation[0m            [1;95m╠══[0m[1;37m[7] Ahoy![0m                  [1;95m╚══[0m[1;37m[11] Github[0m
+echo               [1;95m║[0m                                [1;95m║[0m
+echo               [1;95m╚══[0m[1;37m[4] Otimization[0m               [1;95m╚══[0m[1;37m[8] NVIDIA Drivers[0m
 echo.
 echo.
 echo.
 echo.
 echo.
-echo                                    ║ Developed by prxd® 2024 ║ Updated 11th of Setember ║                        
+echo.
+echo.
+echo                                  [1;95m║[0m [1;37mDeveloped by prxd® 2024[0m [1;95m║[0m [1;37mUpdated 11th of Setember[0m [1;95m║[0m                        
 set /p input=.%BS%
 
 if /I %input% EQU 1 start powershell -Command "Checkpoint-Computer -Description 'Alion Restore Point' -RestorePointType 'MODIFY_SETTINGS'"
@@ -42,15 +44,13 @@ goto start
 :banner
 echo.
 echo.
-echo                                         ▄▄▄       ██▓     ██▓ ▒█████   ███▄    █    
-echo                                        ▒████▄    ▓██▒    ▓██▒▒██▒  ██▒ ██ ▀█   █    
-echo                                        ▒██  ▀█▄  ▒██░    ▒██▒▒██░  ██▒▓██  ▀█ ██▒   
-echo                                        ░██▄▄▄▄██ ▒██░    ░██░▒██   ██░▓██▒  ▐▌██▒   
-echo                                         ▓█   ▓██▒░██████▒░██░░ ████▓▒░▒██░   ▓██░   
-echo                                         ▒▒   ▓▒█░░ ▒░▓  ░░▓  ░ ▒░▒░▒░ ░ ▒░   ▒ ▒    
-echo                                          ▒   ▒▒ ░░ ░ ▒  ░ ▒ ░  ░ ▒ ▒░ ░ ░░   ░ ▒░   
-echo                                          ░   ▒     ░ ░    ▒ ░░ ░ ░ ▒     ░   ░ ░    
-echo                                              ░  ░    ░  ░ ░      ░ ░           ░    
+echo                          [1;95m________  ___       ___  ________  ________   ___      ___  _____[0m     
+echo                         [1;95m^|\   __  \^|\  \     ^|\  \^|\   __  \^|\   ___  \^|\  \    /  /^|/ __  \[0m    
+echo                         [1;95m\ \  \^|\  \ \  \    \ \  \ \  \^|\  \ \  \\ \  \ \  \  /  / /\/_^|\  \[0m  
+echo                          [1;95m\ \   __  \ \  \    \ \  \ \  \\\  \ \  \\ \  \ \  \/  / /\^|/ \ \  \[0m  
+echo                           [1;95m\ \  \ \  \ \  \____\ \  \ \  \\\  \ \  \\ \  \ \    / /      \ \  \[0m 
+echo                            [1;95m\ \__\ \__\ \_______\ \__\ \_______\ \__\\ \__\ \__/ /        \ \__\[0m
+echo                             [1;95m\^|__^|\^|__^|\^|_______^|\^|__^|\^|_______^|\^|__^| \^|__^|\^|__^|/          \^|__^|[0m
 echo.
 echo.                                   
 
